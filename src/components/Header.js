@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default () => (
+const Header = () => (
   <header>
     <span role="img" aria-label="Movie Camera" className="header__emoji">🎥</span>
     <h1>
@@ -9,3 +9,5 @@ export default () => (
     <span role="img" aria-label="Clapper Board" className="header__emoji">🎬</span>
   </header>
 )
+
+export default Header

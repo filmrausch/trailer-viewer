@@ -1,7 +1,7 @@
 import React from 'react'
 import YouTube from 'react-youtube'
 
-export default ({ video }) => (
+const VideoWrapper = ({ video }) => (
   <div className="video">
     <h2 className="video__title">{video.name}</h2>
     <p className="video__subtitle">{video.special}</p>
@@ -11,3 +11,5 @@ export default ({ video }) => (
     />
   </div>
 )
+
+export default VideoWrapper
