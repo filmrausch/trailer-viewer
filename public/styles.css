@@ -7,15 +7,28 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+/*
+  header styles
+*/
+
 header {
   background: #fed600;
   padding: 1px;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.24);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-header h1 {
-  text-align: center;
+.header__emoji {
+  margin: 0 10px;
+  font-size: 1.5em;
 }
+
+/*
+  playlist styles
+*/
 
 .playlist .video {
   display: flex;
@@ -29,16 +42,20 @@ header h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 3em;
   margin: 20px 0 0;
+  text-align: center;
 }
 
 .playlist .video__subtitle {
   margin: 0;
   font-style: italic;
   font-size: 1.2em;
+  text-align: center;
 }
 
 .playlist .video__iframe {
   margin-top: 20px;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 .playlist__nav {
