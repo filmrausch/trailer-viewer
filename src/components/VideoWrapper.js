@@ -1,5 +1,6 @@
 import React from 'react'
 import YouTube from 'react-youtube'
+import PropTypes from 'prop-types'
 
 const VideoWrapper = ({ video }) => (
   <div className="video">
@@ -11,5 +12,13 @@ const VideoWrapper = ({ video }) => (
     />
   </div>
 )
+
+VideoWrapper.propTypes = {
+  video: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    special: PropTypes.string
+  }).isRequired
+}
 
 export default VideoWrapper

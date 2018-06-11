@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import VideoWrapper from './VideoWrapper'
+import PropTypes from 'prop-types'
 
 class Playlist extends Component {
-  
+
   state = {
     index: 0
   }
-  
+
   incIndex = () => {
     this.setState((prevState, props) => ({
       index: Math.min(prevState.index + 1, props.videos.length - 1)
@@ -35,6 +36,16 @@ class Playlist extends Component {
       </div>
     )
   }
+}
+
+Playlist.propTypes = {
+  videos: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+      special: PropTypes.string
+    })
+  ).isRequired
 }
 
 export default Playlist
