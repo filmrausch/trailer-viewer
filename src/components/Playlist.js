@@ -20,6 +20,20 @@ class Playlist extends Component {
     }))
   }
 
+  keyBinding = e => {
+    (e.code === 'ArrowLeft' ? this.decIndex
+      : e.code === 'ArrowRight' ? this.incIndex
+        : () => { })()
+  }
+
+  componentDidMount() {
+    document.addEventListener('keydown', this.keyBinding)
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.keyBinding)
+  }
+
   render() {
     const { videos } = this.props
     const { index } = this.state
