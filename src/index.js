@@ -6,7 +6,7 @@ import Playlist from './components/Playlist'
 import links from './links'
 import { idParser } from './util'
 const videos = links.map(
-  ({name, url, special}) => ({name, special, id: idParser(url)})
+  ({ name, url, special }) => ({ name, special, id: idParser(url) })
 )
 
 const App = () => (
