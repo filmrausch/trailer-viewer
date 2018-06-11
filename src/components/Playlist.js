@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import VideoWrapper from './VideoWrapper'
+import Video from './Video'
 import PropTypes from 'prop-types'
 
 class Playlist extends Component {
@@ -25,7 +25,7 @@ class Playlist extends Component {
     const { index } = this.state
     return (
       <div className="playlist">
-        <VideoWrapper video={videos[index]} />
+        <Video video={videos[index]} />
         <div className="playlist__nav">
           <button onClick={this.decIndex}>prev</button>
           <button onClick={this.incIndex}>next</button>
