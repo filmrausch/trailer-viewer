@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "http://filmrausch.github.io/trailer-viewer",
   "dependencies": {
     "prop-types": "^15.6.1",
     "react": "16.3.2",
@@ -15,11 +16,13 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.9.1"
+    "eslint-plugin-react": "^7.9.1",
+    "gh-pages": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
