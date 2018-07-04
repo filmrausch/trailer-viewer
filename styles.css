@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Lato');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #333;
+  font-family: 'Lato', sans-serif;
+}
+
+/*
+  header styles
+*/
+
+header {
+  background: #fed600;
+  padding: 1px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.24);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__emoji {
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+
+/*
+  playlist styles
+*/
+
+.playlist .video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 30px 30px;
+  color: #ddd;
+}
+
+.playlist .video__title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+.playlist .video__subtitle {
+  margin: 0;
+  font-style: italic;
+  font-size: 1.2em;
+  text-align: center;
+  height: 1em;
+}
+
+.playlist .video__iframe {
+  margin-top: 20px;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.playlist__nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.playlist__nav button {
+  background: #ddd;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  background-color: #ddd;
+  color: #111;
+}
+
+.playlist__nav button:active {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+.playlist__index {
+  color: #ddd;
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
+
