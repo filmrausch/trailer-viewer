@@ -20,11 +20,10 @@ class Playlist extends Component {
     }))
   }
 
-  keyBinding = e => {
-    (e.code === 'ArrowLeft' ? this.decIndex
-      : e.code === 'ArrowRight' ? this.incIndex
-        : () => { })()
-  }
+  keyBinding = e =>
+    e.code === 'ArrowLeft' ? this.decIndex()
+      : e.code === 'ArrowRight' ? this.incIndex()
+        : 0
 
   componentDidMount() {
     document.addEventListener('keydown', this.keyBinding)
