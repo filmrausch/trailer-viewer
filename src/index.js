@@ -6,7 +6,7 @@ import links from './links.json'
 import { idParser } from './util'
 
 const videos = links.map(
-  ({ name, url, special }) => ({ name, special, id: idParser(url) })
+  ({ name, year, url, special }) => ({ name, year, special, id: idParser(url) })
 )
 
 const App = () => (

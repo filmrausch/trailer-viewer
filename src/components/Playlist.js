@@ -56,6 +56,7 @@ Playlist.propTypes = {
   videos: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
+      year: PropTypes.number.isRequired,
       id: PropTypes.string.isRequired,
       special: PropTypes.string
     })
