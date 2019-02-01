@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Lato');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav|Open+Sans');
 
 body {
   margin: 0;
   padding: 0;
   background: #333;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*
@@ -35,11 +35,11 @@ header {
   flex-direction: column;
   align-items: center;
   margin: 0 30px 30px;
-  color: #ddd;
+  color: #eee;
 }
 
 .playlist .video__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Yantramanav', sans-serif;
   font-size: 3em;
   margin: 20px 0 0;
   text-align: center;
