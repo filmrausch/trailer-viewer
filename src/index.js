@@ -3,16 +3,11 @@ import { render } from 'react-dom'
 import Header from './components/Header'
 import Playlist from './components/Playlist'
 import links from './links.json'
-import { idParser } from './util'
-
-const videos = links.map(
-  ({ name, year, url, special }) => ({ name, year, special, id: idParser(url) })
-)
 
 const App = () => (
   <Fragment>
     <Header />
-    <Playlist videos={videos} />
+    <Playlist videos={links} />
   </Fragment>
 )
 

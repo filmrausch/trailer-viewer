@@ -7,10 +7,10 @@
   "homepage": "http://filmrausch.github.io/trailer-viewer",
   "dependencies": {
     "prop-types": "^15.6.1",
-    "react": "16.3.2",
-    "react-dom": "16.3.2",
-    "react-scripts": "1.1.4",
-    "react-youtube": "7.6.0"
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-player": "^1.9.3",
+    "react-scripts": "1.1.4"
   },
   "author": "Mark Kvetny",
   "license": "ISC",
