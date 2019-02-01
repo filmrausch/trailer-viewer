@@ -1,8 +1,16 @@
 import React, { Component } from 'react'
 import Video from './Video'
-import PropTypes from 'prop-types'
+import { IVideo } from '../interfaces/video'
 
-class Playlist extends Component {
+interface Props {
+  videos: IVideo[]
+}
+
+interface State {
+  index: number
+}
+
+class Playlist extends Component<Props, State> {
 
   state = {
     index: 0
@@ -20,10 +28,11 @@ class Playlist extends Component {
     }))
   }
 
-  keyBinding = e =>
+  keyBinding = (e: KeyboardEvent) => {
     e.code === 'ArrowLeft' ? this.decIndex()
       : e.code === 'ArrowRight' ? this.incIndex()
         : 0
+  }
 
   componentDidMount() {
     document.addEventListener('keydown', this.keyBinding)
@@ -49,17 +58,6 @@ class Playlist extends Component {
       </div>
     )
   }
-}
-
-Playlist.propTypes = {
-  videos: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      year: PropTypes.number.isRequired,
-      id: PropTypes.string.isRequired,
-      special: PropTypes.string
-    })
-  ).isRequired
 }
 
 export default Playlist
