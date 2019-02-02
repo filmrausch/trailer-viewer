@@ -1,4 +1,11 @@
 {
-  "main.js": "static/js/main.89112501.js",
-  "main.js.map": "static/js/main.89112501.js.map"
+  "main.js": "/trailer-viewer/static/js/main.7f6e9c77.chunk.js",
+  "main.js.map": "/trailer-viewer/static/js/main.7f6e9c77.chunk.js.map",
+  "static/js/1.91391a6e.chunk.js": "/trailer-viewer/static/js/1.91391a6e.chunk.js",
+  "static/js/1.91391a6e.chunk.js.map": "/trailer-viewer/static/js/1.91391a6e.chunk.js.map",
+  "runtime~main.js": "/trailer-viewer/static/js/runtime~main.26be0a66.js",
+  "runtime~main.js.map": "/trailer-viewer/static/js/runtime~main.26be0a66.js.map",
+  "index.html": "/trailer-viewer/index.html",
+  "precache-manifest.8ab95cf4891f8d0fbc2643fefaf4a516.js": "/trailer-viewer/precache-manifest.8ab95cf4891f8d0fbc2643fefaf4a516.js",
+  "service-worker.js": "/trailer-viewer/service-worker.js"
 }
