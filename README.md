@@ -25,6 +25,6 @@ deploy it to github with ```yarn deploy```. The site should then appear live on
 
 For easier navigation (so that you don't have to use a mouse), the trailer viewer has keyboard shortcuts!
 
-- ```ARROW LEFT``` : next video
-- ```ARROW RIGHT```: previous video
+- ```ARROW RIGHT``` : next video
+- ```ARROW LEFT```: previous video
 - ```SPACE```: enter full screen 
